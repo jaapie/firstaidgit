@@ -12,6 +12,7 @@ var config = {
     entry: {
         app: [
             'webpack/hot/dev-server',
+            'webpack-dev-server/client?http://localhost:3000',
             "./js/app.js"
         ]
     },
@@ -19,8 +20,6 @@ var config = {
     resolve: {
         extensions: ['', '.js', '.jsx', '.scss'],
         alias: {
-            //'es6-promise': path.join(folders.NPM, 'es6-promise', 'es6-promise.js'),
-            //'fetch': path.join(folders.NPM, 'whatwg-fetch', 'fetch.js'),
         }
     },
     stats: {
